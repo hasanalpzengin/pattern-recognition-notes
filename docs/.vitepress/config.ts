@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/pattern-recognition-vitepress/',
+  base: '/pattern-recognition-notes/',
   title: 'Pattern Recognition',
   description: 'Lecture Notes with Scientific Visualizations',
   
