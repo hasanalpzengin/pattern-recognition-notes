@@ -39,6 +39,20 @@ jobs:
       - name: Build VitePress site
         run: npm run docs:build
 
+      - name: Create .nojekyll file
+        run: touch docs/.vitepress/dist/.nojekyll
+
+      - name: Verify build output
+        run: |
+          echo "Build output structure:"
+          ls -la docs/.vitepress/dist/
+          echo ""
+          echo ".nojekyll file present:"
+          test -f docs/.vitepress/dist/.nojekyll && echo "✓ Yes" || echo "✗ No"
+          echo ""
+          echo "Assets folder:"
+          ls -la docs/.vitepress/dist/assets/ | head -20
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
