@@ -36,6 +36,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Clean build cache
+        run: rm -rf docs/.vitepress/dist docs/.vitepress/cache .vite
+
       - name: Build VitePress site
         run: npm run docs:build
 
@@ -51,7 +54,13 @@ jobs:
           test -f docs/.vitepress/dist/.nojekyll && echo "✓ Yes" || echo "✗ No"
           echo ""
           echo "Assets folder:"
-          ls -la docs/.vitepress/dist/assets/ | head -20
+          ls -la docs/.vitepress/dist/assets/
+          echo ""
+          echo "app.js file exists:"
+          find docs/.vitepress/dist/assets -name "app*.js" -o -name "*app*.js"
+          echo ""
+          echo "Total files in dist:"
+          find docs/.vitepress/dist -type f | wc -l
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
