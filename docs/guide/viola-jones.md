@@ -142,7 +142,7 @@ The terms "strong classifiers" (option A) and "best single classifier predicts" 
 
 ---
 
-<script setup>
+<script setup lang="ts">
 import { reactive } from 'vue'
 
 // Build 4 Haar template subplots as rectangle shapes in Plotly
