@@ -8,6 +8,10 @@ import KernelVisualizer from '../../components/KernelVisualizer.vue'
 import OptimizationVisualizer from '../../components/OptimizationVisualizer.vue'
 import EMVisualizer from '../../components/EMVisualizer.vue'
 import InteractiveDemo from '../../components/InteractiveDemo.vue'
+import LogisticRegressionVisualizer from '../../components/LogisticRegressionVisualizer.vue'
+import EvaluationMetricsVisualizer from '../../components/EvaluationMetricsVisualizer.vue'
+import BiasVarianceVisualizer from '../../components/BiasVarianceVisualizer.vue'
+import MockExamQuiz from '../../components/MockExamQuiz.vue'
 
 export default {
   extends: DefaultTheme,
@@ -22,5 +26,9 @@ export default {
     app.component('OptimizationVisualizer', OptimizationVisualizer)
     app.component('EMVisualizer', EMVisualizer)
     app.component('InteractiveDemo', InteractiveDemo)
+    app.component('LogisticRegressionVisualizer', LogisticRegressionVisualizer)
+    app.component('EvaluationMetricsVisualizer', EvaluationMetricsVisualizer)
+    app.component('BiasVarianceVisualizer', BiasVarianceVisualizer)
+    app.component('MockExamQuiz', MockExamQuiz)
   }
 }

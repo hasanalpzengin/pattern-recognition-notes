@@ -50,6 +50,7 @@ Choose a lecture to begin:
 - [Discriminant Analysis II →](/guide/discriminant-analysis)
 - [Norms and Norm-Dependent Regression →](/guide/norms-regression)
 - [Optimization →](/guide/optimization)
+- [Mock Exams Walkthrough (2025 + 2026) →](/guide/mock-exams-walkthrough)
 
 ## Tips for Learning
 

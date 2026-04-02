@@ -4,7 +4,7 @@ export default defineConfig({
   base: '/pattern-recognition-notes/',
   title: 'Pattern Recognition',
   description: 'Lecture Notes with Scientific Visualizations',
-  
+
   head: [
     ['meta', { name: 'theme-color', content: '#3c3c3d' }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -22,7 +22,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'Pattern Recognition',
-    
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
@@ -34,7 +34,15 @@ export default defineConfig({
         { text: 'Duality', link: '/guide/duality' },
         { text: 'SVM II', link: '/guide/svm-ii' },
         { text: 'Kernels', link: '/guide/kernels' },
-        { text: 'EM Algorithm', link: '/guide/em-algorithm' }
+        { text: 'EM Algorithm', link: '/guide/em-algorithm' },
+        { text: 'Mock Exams Walkthrough', link: '/guide/mock-exams-walkthrough' },
+        { text: 'Logistic Regression', link: '/guide/logistic-regression' },
+        { text: 'Naive Bayes', link: '/guide/naive-bayes' },
+        { text: 'Evaluation Metrics & ROC', link: '/guide/evaluation-metrics' },
+        { text: 'Bias–Variance Tradeoff', link: '/guide/bias-variance' },
+        { text: 'Viola–Jones Detector', link: '/guide/viola-jones' },
+        { text: 'EM Pitfalls', link: '/guide/em-pitfalls' },
+        { text: 'Optimization Cheat Sheet', link: '/guide/optimization-cheatsheet' }
       ]}
     ],
 
@@ -61,6 +69,24 @@ export default defineConfig({
           items: [
             { text: 'Kernel Methods', link: '/guide/kernels' },
             { text: 'Expectation Maximization', link: '/guide/em-algorithm' }
+          ]
+        },
+        {
+          text: 'Mock Exams',
+          items: [
+            { text: 'Mock Exams Walkthrough (2025 & 2026)', link: '/guide/mock-exams-walkthrough' }
+          ]
+        },
+        {
+          text: 'Exam Supplements',
+          items: [
+            { text: 'Logistic Regression', link: '/guide/logistic-regression' },
+            { text: 'Naive Bayes', link: '/guide/naive-bayes' },
+            { text: 'Evaluation Metrics & ROC', link: '/guide/evaluation-metrics' },
+            { text: 'Bias–Variance Tradeoff', link: '/guide/bias-variance' },
+            { text: 'Viola–Jones Detector', link: '/guide/viola-jones' },
+            { text: 'EM Pitfalls', link: '/guide/em-pitfalls' },
+            { text: 'Optimization Cheat Sheet', link: '/guide/optimization-cheatsheet' }
           ]
         }
       ]
