@@ -178,16 +178,6 @@ To add new content:
 3. Use Vue components for visualizations
 4. Follow markdown conventions
 
-## License
-
-CC BY 4.0 - Friedrich-Alexander-Universität Erlangen-Nürnberg
-
-## Credits
-
-Based on Pattern Recognition lectures from FAU Erlangen-Nürnberg.
-
-Authors: Niemann, Hornegger, Hahn, Steidl, Nöth, Seitz, Rodriguez, Das, Maier
-
 ---
 
 **Happy Learning!** Explore the interactive visualizations and deepen your understanding of Pattern Recognition. 🚀
